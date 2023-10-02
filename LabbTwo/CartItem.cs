@@ -19,17 +19,14 @@ namespace LabbTwo
 
         public override string ToString()
         {
-            return $"{Product.Name} ({Quantity} items) - {CalulateTotalCost()} SEK";
+            return $"{Product.Name} ({Quantity} items) - {CalculateTotalCost()} SEK";
         }
 
-        private object CalulateTotalCost()
-        {
-            throw new NotImplementedException();
-        }
+        
 
         internal double CalculateTotalCost()
         {
-            throw new NotImplementedException();
+            return Product.Price * Quantity;
         }
     }
 }
